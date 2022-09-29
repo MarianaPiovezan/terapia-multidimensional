@@ -1,5 +1,4 @@
 
-import Swiper from "swiper";
 
 const botaoMenu = document.querySelector('.icon-menu');
 const navMenu = document.querySelector('.nav-menu');

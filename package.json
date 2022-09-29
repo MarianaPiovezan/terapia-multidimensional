@@ -2,7 +2,6 @@
   "name": "amanda---projeto",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "dependencies": {
     "dom7": "^4.0.4",
