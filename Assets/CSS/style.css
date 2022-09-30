@@ -94,8 +94,8 @@ body {
 /****************LOGO****************/
 
 .logo {
+  display: block;
   color: white;
-  position: absolute;
   left: 1.5rem;
   font: 400 1.125rem var(--title-font);
   -webkit-font-smothing: antialiased;
@@ -520,25 +520,24 @@ h2 {
 
 .duvidas h1 {
   text-align: center;
+  margin: 2rem 0;
 }
 
 .container-perguntas {
   display: grid;
   align-items: center;
   position: relative;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.container-pergunta-resposta{
-  position: relative;
-}
 
 button.box-pergunta {
   display: flex;
-  position: absolute;
   background-color: var(--base-color-alt);
   align-items: center;
+  position: relative;
   justify-content: space-between;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
   padding: 1rem;
@@ -547,21 +546,15 @@ button.box-pergunta {
 }
 
 .box-pergunta h2 {
+  text-align: left;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 
-.abrir-fechar-pergunta{
-  color: #FFFFFF;
-  font-size: 2rem;
-  font-weight: 700;
-
-}
 
 div.resposta{
   display: none;
-  position: absolute;
   width: 93%;
   background-color: var(--body-color);
   padding: 1rem;
@@ -569,24 +562,26 @@ div.resposta{
   margin: 0 auto;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
   text-align: left;
-  top: 50px;
+  top: 0;
   z-index: 0;
 }
 
 div.resposta p{
-  text-indent: 1.183rem;
+  text-indent: 3rem,
+
 }
 
 div.resposta.show {
   display: block;
+  position: relative;
 }
 
-div.resposta {
+div.resposta.active {
   padding: 1rem;
   background-color: var(--body--color);
   max-height: 0;
   overflow: hidden;
-  transition: 0.6s ease-in-out;
+  transition: 1s ease-in-out;
   opacity: 0;
 }
 
@@ -597,7 +592,7 @@ div.resposta.show {
 
 button.box-pergunta:after {
   content: '\02795'; 
-  font-size: 13px;
+  font-size: 1rem;
   color: #FFFFFF;
   float: right;
   margin-left: 5px;
@@ -605,4 +600,32 @@ button.box-pergunta:after {
 
 button.box-pergunta.active:after {
   content: "\2796";
+}
+
+
+/**************CONTATO*************/
+
+.contato{
+  padding: var(--header-height) 0;
+}
+
+.contato.button{
+  width: auto;
+  margin-top: 0;
+}
+
+
+/***************FOOTER*************/
+
+.footer {
+  overflow: hidden;
+  background-image: url("../Imagens/Background\ 1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem 1.5rem;
+}
+
+.brand{
+
+
 }
