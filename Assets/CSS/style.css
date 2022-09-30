@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
 
 :root {
-  --header-height: 6.25rem;
+  --header-height: 5.625rem;
 
   /*Colors*/
   --header-color: #010d13;
@@ -45,7 +46,7 @@ body {
 
 .subtitle {
   font: 300 1rem var(--body-font);
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .color-title {
@@ -61,7 +62,7 @@ body {
 }
 .button {
   height: 55px;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background-color: var(--tittle-color);
   border-radius: 10px;
   font: 400 1.125rem var(--body-font);
@@ -110,7 +111,7 @@ body {
 .icon-menu {
   display: block;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
 }
 
 .barra {
@@ -143,10 +144,8 @@ header {
   height: var(--header-height);
   background-color: var(--header-color);
   position: fixed;
-  z-index: 100;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  z-index: 10;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -154,6 +153,7 @@ header {
 
 .nav-bar {
   height: var(--header-height);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +161,7 @@ header {
 }
 .nav-menu {
   position: fixed;
-  right: -120%;
+  right: -100%;
   background: var(--header-color);
   width: 100vw;
   height: 100vh;
@@ -172,7 +172,6 @@ header {
   text-align: center;
   transition: 1s;
 }
-
 .nav-menu.active {
   right: 0;
 }
@@ -221,7 +220,6 @@ header {
 #inicio .img-logo {
   width: 90%;
   max-width: 400px;
-  text-align: center;
 }
 
 .inicio h1 {
@@ -256,18 +254,23 @@ header {
 .terapia-destaque {
   position: relative;
   top: -100px;
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: var(--tittle-color);
 }
 
-.terapia-destaque h1,
-p {
+.terapia h1 {
+  text-align: center;
+}
+
+
+p.subtitle.color-white{
   text-align: center;
 }
 
 .container-multi {
   padding-bottom: 4rem;
 }
+
 .img-universo {
   width: 100vw;
   position: relative;
@@ -328,7 +331,7 @@ h2 {
   display: block;
   margin-bottom: 1.5rem;
   font-size: 7rem;
-  color: var(--title-color);
+  color: var(--tittle-color);
 }
 
 .card-subtitle {
@@ -515,7 +518,6 @@ h2 {
 
 .duvidas {
   background-color: var(--body-color-second);
-  padding: var(--header-height) 0;
 }
 
 .duvidas h1 {
@@ -523,6 +525,9 @@ h2 {
   margin: 2rem 0;
 }
 
+.container-pergunta-resposta{
+ position: relative;
+}
 .container-perguntas {
   display: grid;
   align-items: center;
@@ -581,7 +586,7 @@ div.resposta.active {
   background-color: var(--body--color);
   max-height: 0;
   overflow: hidden;
-  transition: 1s ease-in-out;
+  transition: all 2s ease-in-out;
   opacity: 0;
 }
 
@@ -591,15 +596,17 @@ div.resposta.show {
 }
 
 button.box-pergunta:after {
-  content: '\02795'; 
-  font-size: 1rem;
+  content: '\002B'; 
+  font-size: 2rem;
   color: #FFFFFF;
   float: right;
   margin-left: 5px;
+  transition: all 0.4s ease-in-out;
 }
 
 button.box-pergunta.active:after {
-  content: "\2796";
+  transform: rotate(45deg);
+  color: var(--text-color-alt);
 }
 
 
@@ -609,9 +616,32 @@ button.box-pergunta.active:after {
   padding: var(--header-height) 0;
 }
 
-.contato.button{
-  width: auto;
+.contato .button{
+  display: grid;
+  grid-template-columns: auto auto ;
+  column-gap: 10px;
+  width: fit-content;
   margin-top: 0;
+  
+
+
+}
+
+.contato .icon-whatsapp{
+  color:#FFFFFF;
+  font-size: 1.5rem;
+}
+
+.contato .links .grid{
+  gap:1rem;
+}
+
+
+.links ul li i{
+  color: var(--tittle-color);
+  align-self: center;
+  padding-right: 10px;
+  font-size: 1.2rem;
 }
 
 
@@ -622,10 +652,22 @@ button.box-pergunta.active:after {
   background-image: url("../Imagens/Background\ 1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 .brand{
+  display: grid;
+  gap: 1.4rem; ;
+}
 
+.subtitle-footer{
+  text-align: left;
+  color: #FFFFFF;
 
 }
+
+.icon-instagram{
+  font-size: 2rem;
+}
+
+

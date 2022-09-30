@@ -23,9 +23,8 @@
 
     <!-----------icons------------------->
 
-    <link rel="stylesheet" href="./Assets/icons-font/style.css" />
-    <link rel="stylesheet" href="./Assets/icons-font/icons-projeto/style.css">
-    
+    <link rel="stylesheet" href="./Assets/icon-fonts/style.css" />
+
     <!-----------fonts------------------->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -194,13 +193,14 @@
             <h3 class="title color-title">Formação profissional</h3>
             <p class="subtitle color-subtitle" >Certificada em Terapia Multidimensional pela APTMD (Associação Portuguesa de Terapia Multidimensional);</p>
             <ul class="curso">
-              <li><p><span class="item">&bull;</span> Iniciada em Reiki I e II;</p></li>
-              <li><p><span class="item">&bull;</span> Introdução à Musicoterapia</p></li>
+              <li><p><span class="item">&bull;</span> Iniciada em Reiki I e II;</p></li><br/>
+              <li><p><span class="item">&bull;</span> Introdução à Musicoterapia.</p></li>
             </ul>
 
           </div>
       </section>
       <section class="depoimentos" id="depoimentos">
+        <div class="container grid">
         <div class="title-depoimentos">
         <h1 class="title color-title">Depoimentos de quem já fez </h1>
         </div>
@@ -208,7 +208,7 @@
             <div class="swiper-wrapper">
               <div class="depoimentos swiper-slide">
                 <blockquote>
-                  <p >
+                  <p class="subtitle">
                     <span>&ldquo;</span>
                     Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
                   </p>
@@ -247,8 +247,9 @@
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
+              
       </section>
-      <section class="duvidas" id="duvidas">
+      <section class=" section duvidas" id="duvidas">
         <div class="container grid">
           
           <h1 class="title color-title">Dúvidas frequentes</h1>
@@ -295,33 +296,44 @@
         <div class="container grid">
           <h1 class="title color-title">Entrar em contato!</h1>
           <p class="subtitle color-subtitle">Ficou com dúvidas, quer saber mais ou marcar um horário, entre em contato:</p>
-          <a 
-          href="https://api.whatsapp.com/send?phone=+5511974858109&text=Oi! Gostaria de agendar uma sessão"
+          <div class="links">
+            <ul class="grid">
+
+          <li><a href="tel:+5511974858109" class="color-subtitle"><i class="icon-phone"></i>(11) 97485-8109</a></li>
+          <li><a href=mailto:piovmari@gmail.com class="color-subtitle"><i class="icon-email"></i>piovmari@gmail.com</a></li>
+            </ul>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=+5511974858109&text=Oi! Gostaria de agendar uma sessão"
           class="button"
           target="_blank"
-        >
-          Agende um horário</a
-        >
-        <div class="image-borboleta">
-        <img href="./Assets/Imagens/logo-borboleta-branco.png">
-      </div>
+        ><i class="icon-whatsapp"></i>
+          Entrar em contato</a>
         </div>
       </section>
         </main>
+
+
+
     <footer id="footer" class="footer">
       <div class="brand">
       <a class="logo" href="#inicio">
         AMANDA PIOVEZAN <br />
         <span>healing.</span></a>
-        <p class="subtitle color-white">©2022 Amanda Piovezan healing.</p>
-        <p class="subtitle color-white">Todos os direitos reservados.</p>
+        <div>
+        <p class="subtitle subtitle-footer">©2022 Amanda Piovezan healing.</p>
+        <p class="subtitle subtitle-footer">Todos os direitos reservados.</p>
       </div>
+      
       <div class="social grid">
         <a href="https://www.instagram.com/amandapiovezan.healing/?igshid=YmMyMTA2M2Y%3D" target="_blank"
-          ><i class="icon-instagram"></i>
+          ><i class="icon-instagram color-white"></i>
         </a>
       </div>
+    </div>
     </footer>
+
+
+
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
