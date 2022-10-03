@@ -1,0 +1,139 @@
+@media (min-width: 768px) {
+  .section {
+    padding: 10rem 0;
+  }
+
+  .container{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-bar {
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    height: 0;
+    left: 0;
+  }
+
+  .nav-link {
+    font-family: var(--body-font);
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  /*HOME*/
+
+  .inicio .grid {
+    grid-auto-flow: column;
+    margin: 0 auto;
+    width: space-between;
+    align-items: center;
+  }
+
+
+
+  .inicio .text {
+    order: 0;
+    text-align: left;
+    max-width: 26rem;
+  }
+
+.inicio .image{
+    order: 1;
+}
+
+
+/*TERAPIA*/
+
+
+.terapia .container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.terapia-detaque{
+    top: -160px;
+
+}
+
+.terapia-detaque .text{
+    order: 0;
+    max-width: 30rem;
+}
+
+
+
+.terapia .container-multi .grid{
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.image-universo, .img-universo{
+    grid-column: 1 / 1;
+    max-width: 50rem;
+    
+}
+
+.container-multi .text{
+    grid-column: 1 / 1;
+    max-width: 50rem;
+}
+
+
+
+.cards{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+}
+
+
+/*SOBRE*/
+
+
+
+.sobre .container{
+    grid-auto-flow: column;
+}
+
+.container-raltive{
+    order: 0;
+}
+
+.perfil-descricao{
+    order: 1;
+}
+
+
+/*DEPOIMENTOS*/
+
+.depoimentos .container{
+
+    margin: 0 auto;
+   
+}
+
+/*DUVIDAS*/
+
+ .duvidas .container-perguntas{
+    max-width: 57rem;
+    margin: 0 auto;
+ }
+
+}
+
+/* CONTATO*/
+
+.contato .text{
+    max-width: 25rem;
+}
+
+

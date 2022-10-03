@@ -85,12 +85,12 @@ body {
 
 .container {
   margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
 }
 
 .grid {
   display: grid;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 /****************LOGO****************/
 
@@ -177,9 +177,9 @@ header {
 }
 
 .nav-menu {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   color: var(--body-color);
 }
@@ -190,6 +190,7 @@ header {
   text-align: center;
   align-items: center;
   padding: 1rem;
+  font-family: var(--title-font);
 }
 
 .nav-menu ul li a {
@@ -207,7 +208,7 @@ header {
 #inicio {
   overflow: hidden;
   background-image: url("../Imagens/Background\ 1x.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -219,7 +220,7 @@ header {
 
 #inicio .img-logo {
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .inicio h1 {
@@ -256,6 +257,7 @@ header {
   top: -100px;
   padding: 5rem 0;
   background-color: var(--tittle-color);
+  background-size: cover;
 }
 
 .terapia h1 {
@@ -527,10 +529,11 @@ h2 {
 
 .container-pergunta-resposta{
  position: relative;
+ align-items: center;
 }
 .container-perguntas {
   display: grid;
-  align-items: center;
+  justify-content: center;
   position: relative;
   gap: 3rem;
 }
@@ -627,6 +630,14 @@ button.box-pergunta.active:after {
 
 }
 
+.contato .grid{
+  gap: 2rem;
+}
+
+.contato .text h1{
+  margin-bottom: 2rem;
+}
+
 .contato .icon-whatsapp{
   color:#FFFFFF;
   font-size: 1.5rem;
@@ -650,7 +661,7 @@ button.box-pergunta.active:after {
 .footer {
   overflow: hidden;
   background-image: url("../Imagens/Background\ 1x.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   padding: 5rem 1.5rem;
 }
