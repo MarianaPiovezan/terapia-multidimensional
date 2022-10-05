@@ -177,7 +177,8 @@ header {
 }
 
 .nav-menu {
-  /* display: flex; */
+  /* disp
+  ay: flex; */
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
@@ -201,6 +202,23 @@ header {
 .nav-link:hover,
 .nav-link:active {
   color: var(--base-color-alt);
+}
+
+.nav-menu ul li a::after{
+  content: " ";
+  position: absolute;
+  width: 0%;
+  text-align: center;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--base-color-alt);
+  bottom: -1.2rem;
+  left:0;
+  transition: 1s ease-in-out;
+}
+
+.nav-menu ul li a:hover::after{
+  width: 100%;
 }
 
 /****************HOME****************/
@@ -257,7 +275,8 @@ header {
   top: -100px;
   padding: 5rem 0;
   background-color: var(--tittle-color);
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
 }
 
 .terapia h1 {
@@ -327,6 +346,11 @@ h2 {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.3rem 0.3rem 0 0;
   text-align: center;
+  transition: transform 1s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(2, 2);
 }
 
 .card i {
@@ -448,6 +472,7 @@ h2 {
 .depoimentos .container {
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 5rem;
 }
 
 .depoimentos .title-depoimentos {
@@ -496,6 +521,7 @@ h2 {
 /*swiper*/
 
 .swiper-slide {
+  position: relative;
   height: auto;
   padding: 3rem 1rem;
 }
@@ -503,18 +529,12 @@ h2 {
   display: block;
 }
 
-.left-right {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.button-arrow {
-  padding: 1rem;
+.swiper-button-prev, .swiper-button-next{
+  color: var(--tittle-color);
+  font-weight: bold;
+  padding: 0.5rem;
 }
 
-.arrow {
-  font-size: 1.5rem;
-  color: var(--tittle-color);
-}
 
 /**************DUVIDAS*************/
 

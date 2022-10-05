@@ -1,4 +1,3 @@
-
 /* Menu abrir e fechar */
 
 const botaoMenu = document.querySelector('.icon-menu');
@@ -19,33 +18,31 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 /* depoimentos slider / carousel / swiper*/
 
-/*
+// import Swiper from "swiper"
 
-let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    mousewheel: true,
-    keyboard: true,
-    navigation: {
-      nextEl: ".icon-right-arrow",
-      prevEl: ".icon-left-arrow",
-    },
-    breakpoints: {
-        767: {
-          slidesPerView: 2,
-          setWrapperSize: true
-        }
-    }
-  });
+// const swiper = new Swiper(".swiper", {
+//   slidesPerView: 1,
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 30
+//     }},
+//   loop: true,
+//   mousewheel: true,
+//   keyboard: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// })
 
-  */
 
-  /* accordion ou collapse */
+/* accordion ou collapse */
 
 let acc = document.getElementsByClassName("box-pergunta");
 let i;
@@ -56,3 +53,18 @@ for (i = 0; i < acc.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
+
+/* Scrool reveal conforme scrool a página*/
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: "60px",
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#inicio .image, #inicio .text ,
+  #terapia, #terapia .terapia-destaque .text, #terapia .container-beneficios , #terapia .container-beneficios h3, #terapia .container-beneficios .card, #sobre, #sobre .container-relative, #sobre .sobre-perfil, #sobre .perfil-descricao, #depoimentos, #depoimentos h1, #depoimentos .swiper , #duvidas, #duvidas h1, #duvidas .box-pergunta, #contato, #contato h1, #contato .text, #contato .links, #contato .button, #footer, #footer .logo, #footer div p, #footer .social`,
+  { interval: 100 }
+)

@@ -1,9 +1,14 @@
 @media (min-width: 768px) {
-  .section {
-    padding: 10rem 0;
+
+  .title{
+    font-size: 2.813rem;
   }
 
-  .container{
+  .section {
+    padding: 8rem 0;
+  }
+
+  .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
@@ -25,6 +30,10 @@
   .nav-link {
     font-family: var(--body-font);
   }
+  .nav-menu a.nav-link{
+    position: relative;
+  }
+ 
 
   .icon-menu {
     display: none;
@@ -39,101 +48,102 @@
     align-items: center;
   }
 
-
-
   .inicio .text {
     order: 0;
     text-align: left;
-    max-width: 26rem;
+    max-width: 24rem;
   }
 
-.inicio .image{
+  .inicio .image {
     order: 1;
-}
+  }
 
+  .inicio p.subtitle.color-white{
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  /*TERAPIA*/
 
-/*TERAPIA*/
-
-
-.terapia .container{
+  .terapia .container {
     margin-left: auto;
     margin-right: auto;
-}
-.terapia-detaque{
+  }
+
+  .terapia .terapia-detaque {
     top: -160px;
-
-}
-
-.terapia-detaque .text{
-    order: 0;
-    max-width: 30rem;
-}
+  }
 
 
 
-.terapia .container-multi .grid{
+
+  .terapia .terapia-detaque .text {
+    max-width: 20rem;
+  }
+
+  .terapia .container-multi .grid {
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
 
-}
+  .image-universo,
+  .img-universo {
+    grid-column: 2 / 3;
+  }
 
-.image-universo, .img-universo{
-    grid-column: 1 / 1;
-    max-width: 50rem;
-    
-}
+  .container-multi .text {
+    grid-column: 1 / 2;
+    max-width: 60rem;
+  }
 
-.container-multi .text{
-    grid-column: 1 / 1;
-    max-width: 50rem;
-}
-
-
-
-.cards{
+  .terapia .cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
-}
+    row-gap: 3rem;
+  }
 
+  .card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 
-/*SOBRE*/
+  /*SOBRE*/
 
+  .sobre .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
 
+  .container-relative {
+    grid-column: 1/2;
+    grid-row: 1/2
+  }
 
-.sobre .container{
-    grid-auto-flow: column;
-}
+  .perfil-descricao {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-.container-raltive{
-    order: 0;
-}
+  /*DEPOIMENTOS*/
 
-.perfil-descricao{
-    order: 1;
-}
+  .depoimentos .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  /*DUVIDAS*/
 
-/*DEPOIMENTOS*/
-
-.depoimentos .container{
-
+  .duvidas .container-perguntas {
     margin: 0 auto;
-   
-}
+  }
 
-/*DUVIDAS*/
+  
 
- .duvidas .container-perguntas{
-    max-width: 57rem;
-    margin: 0 auto;
- }
-
-}
 
 /* CONTATO*/
 
-.contato .text{
-    max-width: 25rem;
+.contato .text .subtitle{
+  max-width: 26rem;
 }
 
-
+}

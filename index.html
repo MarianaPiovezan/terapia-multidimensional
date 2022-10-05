@@ -12,9 +12,9 @@
     
     <!-----------swiper------------------->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   
 
     <!-----------style------------------->
@@ -83,7 +83,8 @@
         </div>
       </section>
       <section id="terapia" class="terapia section">
-        <div class="container terapia-destaque">
+        <div class="terapia-destaque">
+        <div class="container">
             <div class="text">
               <h1 class="title color-white">A terapia</h1>
               <p class="subtitle color-white">
@@ -95,7 +96,9 @@
                 sua origem.
               </p>
             </div>
+            </div>
         </div>
+        
         <div class="container grid container-multi">
             <div class="image-universo ">
               <img
@@ -166,7 +169,7 @@
         </div>
       </section>
       <section id="sobre" class="sobre section">
-        <div class="container">
+        <div class="container grid">
           <div class="container-relative">
             <div class="box-container"></div>
         <div class="sobre-perfil">
@@ -206,53 +209,66 @@
         <div class="title-depoimentos">
         <h1 class="title color-title">Depoimentos de quem já fez </h1>
         </div>
-          <div class="depoimentos swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="depoimentos swiper-slide">
-                <blockquote>
-                  <p class="subtitle">
-                    <span>&ldquo;</span>
-                    Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
-                  </p>
-                  <cite>
-                    <img
-                      src="https://randomuser.me/api/portraits/women/24.jpg"
-                      alt="Foto de Daniela Godoi"
-                    />
-                    Daniela Godoi
-                  </cite>
-                </blockquote>
-              </div>
-                  <div class="depoimentos swiper-slide">
-                    <blockquote>
-                      <p >
-                        <span>&ldquo;</span>
-                        Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
-                      </p>
-                      <cite>
-                        <img
-                          src="https://randomuser.me/api/portraits/women/24.jpg"
-                          alt="Foto de Daniela Godoi"
-                        />
-                        Daniela Godoi
-                      </cite>
-                    </blockquote>
-                  </div>
-            </div>
-                <div class="left-right">
-                  <button type="button" class="button-arrow">
-                    <div class="icon-left-arrow arrow"></div>
-                  
-                  <button type="button" class="button-arrow">
-                    <div class="icon-right-arrow arrow"></div>
-                  
-                  <div class="swiper-pagination"></div>
+
+
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><blockquote>
+                    <p class="subtitle">
+                      <span>&ldquo;</span>
+                      Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
+                    </p>
+                    <cite>
+                      <img
+                        src="https://randomuser.me/api/portraits/women/24.jpg"
+                        alt="Foto de Daniela Godoi"
+                      />
+                      Daniela Godoi
+                    </cite>
+                  </blockquote></div>
+                  <div class="swiper-slide"><blockquote>
+                    <p class="subtitle">
+                      <span>&ldquo;</span>
+                      Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
+                    </p>
+                    <cite>
+                      <img
+                        src="https://randomuser.me/api/portraits/women/24.jpg"
+                        alt="Foto de Daniela Godoi"
+                      />
+                      Daniela Godoi
+                    </cite>
+                  </blockquote></div>
+                  <div class="swiper-slide"><blockquote>
+                    <p class="subtitle">
+                      <span>&ldquo;</span>
+                      Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
+                    </p>
+                    <cite>
+                      <img
+                        src="https://randomuser.me/api/portraits/women/24.jpg"
+                        alt="Foto de Daniela Godoi"
+                      />
+                      Daniela Godoi
+                    </cite>
+                  </blockquote></div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
               </div>
               
       </section>
       <section class=" section duvidas" id="duvidas">
-        <div class="container grid">
+            <div class="container grid">
           
           <h1 class="title color-title">Dúvidas frequentes</h1>
           <div class="container-perguntas">
@@ -331,15 +347,15 @@
       
       <div class="social grid">
         <a href="https://www.instagram.com/amandapiovezan.healing/?igshid=YmMyMTA2M2Y%3D" target="_blank"
-          ><i class="icon-instagram color-white"></i>
+          ><i class="icon-instagram color-white" title="Instagram"></i>
         </a>
       </div>
     </div>
     </footer>
-
-
-
+     <!-------Swiper---------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-------Scroll---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
