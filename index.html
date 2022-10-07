@@ -9,13 +9,6 @@
     <!-----------reset------------------->
 
     <link rel="stylesheet" href="./Assets/CSS/reset.css"/>
-    
-    <!-----------swiper------------------->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-  
 
     <!-----------style------------------->
 
@@ -62,7 +55,7 @@
         <div class="container grid">
           <div class="image">
             <img
-              class="img-logo efeito-flutuante"
+              class="img-logo-inicio efeito-flutuante"
               src="Assets/Imagens/logo-borboleta-branco.png"
             />
           </div>
@@ -82,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section id="terapia" class="terapia section">
+      <section id="terapia" class="terapia">
         <div class="terapia-destaque">
         <div class="container">
             <div class="text">
@@ -102,10 +95,8 @@
         <div class="container grid container-multi">
             <div class="image-universo ">
               <img
-                class="img-universo"
-                src="Assets/Imagens/universo-2.jpg"
-                alt="Imagem do universo"
-              />
+                class="img-universo" alt="Imagem do universo"
+                src="./Assets/Imagens/universo-2.jpg"/>
             </div>
             <div class=" text">
               <h2 class="title color-title">
@@ -171,10 +162,11 @@
       <section id="sobre" class="sobre section">
         <div class="container grid">
           <div class="container-relative">
+            <div>
             <div class="box-container"></div>
-        <div class="sobre-perfil">
-          <div class="image-perfil">
-          <img src="./Assets/Imagens/foto-perfil.png" alt="Imagem da Amanda Piovezan - Terapeuta Multidimensional">
+            <div class="sobre-perfil">
+                <div class="image-perfil">
+                  <img src="./Assets/Imagens/foto-perfil.png" alt="Imagem da Amanda Piovezan - Terapeuta Multidimensional">
         </div>
           <div class="container-info container-info-grid">
             <h1 class="subtitle color-title">Amanda Piovezan</h1>
@@ -186,6 +178,7 @@
             </p>
           </div>
         </div>
+      </div>
         </div>
        
           <div class="perfil-descricao">
@@ -209,13 +202,10 @@
         <div class="title-depoimentos">
         <h1 class="title color-title">Depoimentos de quem já fez </h1>
         </div>
-
-
               <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><blockquote>
+                  <!------------------------- Slides -------------->
+                  <div class="swiper-slide">
+                    <blockquote>
                     <p class="subtitle">
                       <span>&ldquo;</span>
                       Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
@@ -227,47 +217,49 @@
                       />
                       Daniela Godoi
                     </cite>
-                  </blockquote></div>
-                  <div class="swiper-slide"><blockquote>
-                    <p class="subtitle">
-                      <span>&ldquo;</span>
-                      Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
-                    </p>
-                    <cite>
-                      <img
-                        src="https://randomuser.me/api/portraits/women/24.jpg"
-                        alt="Foto de Daniela Godoi"
-                      />
-                      Daniela Godoi
-                    </cite>
-                  </blockquote></div>
-                  <div class="swiper-slide"><blockquote>
-                    <p class="subtitle">
-                      <span>&ldquo;</span>
-                      Eu tive o prazer de ser uma das pessoas que foram atendidas por ela no começo dessa nova jornada, e falo com convicção que foi surreal de bom!!! Recomendo de olhos fechados.
-                    </p>
-                    <cite>
-                      <img
-                        src="https://randomuser.me/api/portraits/women/24.jpg"
-                        alt="Foto de Daniela Godoi"
-                      />
-                      Daniela Godoi
-                    </cite>
-                  </blockquote></div>
+                  </blockquote>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                  <div class="swiper-slide">
+                    <blockquote>
+                    <p class="subtitle">
+                      <span>&ldquo;</span>
+                      Fiquei muito contente com o trabalho realizado, achei que fizeram tudo de maneira muito rápida e com qualidade. E sempre que tive contato com a equipe foram muito atenciosos. Desde já agradeço pelo serviço e pretendo manter a parceria.
+                    </p>
+                    <cite>
+                      <img
+                        src="https://randomuser.me/api/portraits/women/22.jpg"
+                        alt="Foto de Daniela Godoi"
+                      />
+                      Samanta Sousa
+                    </cite>
+                  </blockquote></div>
+                  <div class="swiper-slide">
+                    <blockquote>
+                    <p class="subtitle">
+                      <span>&ldquo;</span>
+                      Excelente atendimento. Atenção, presteza e paciência para alcançar meu objetivo. Conseguiram realizar exatamente o que eu prévia para meu site. Parabéns!
+                    </p>
+                    <cite>
+                      <img
+                        src="https://randomuser.me/api/portraits/women/36.jpg"
+                        alt="Foto de Daniela Godoi"
+                      />
+                      Marcela Ribeiro
+                    </cite>
+                  </blockquote></div>
+            
+             <!-------------------------fim Slides -------------->
+
+                </div>
+                
+                <div class="arrow">
+                <buttom class="btn-prev icon-left-arrow" type="buttom" aria-label="voltar depoimento"></buttom>
+                <buttom class="btn-next icon-right-arrow"type="buttom" aria-label="próximo depoimento"></buttom>
+                </div>
               </div>
               
       </section>
-      <section class=" section duvidas" id="duvidas">
+      <section class="section duvidas" id="duvidas">
             <div class="container grid">
           
           <h1 class="title color-title">Dúvidas frequentes</h1>
@@ -312,15 +304,18 @@
       </section>
       <section class="contato" id="contato">
         <div class="container grid">
+          <div class="contato-conteudo">
           <div class="text">
           <h1 class="title color-title">Entrar em contato!</h1>
           <p class="subtitle color-subtitle">Ficou com dúvidas, quer saber mais ou marcar um horário, entre em contato:</p>
-        </div>
+        </div> <br>
           <div class="links">
             <ul class="grid">
 
-          <li><a href="tel:+5511974858109" class="color-subtitle"><i class="icon-phone"></i>(11) 97485-8109</a></li>
-          <li><a href=mailto:piovmari@gmail.com class="color-subtitle"><i class="icon-email"></i>piovmari@gmail.com</a></li>
+          <li>
+            <a href="tel:+5511974858109" class="color-subtitle"><i class="icon-phone"></i>(11) 97485-8109</a></li>
+          <li> 
+            <a href=mailto:piovmari@gmail.com class="color-subtitle"><i class="icon-email"></i>piovmari@gmail.com</a></li>
             </ul>
           </div>
           <a href="https://api.whatsapp.com/send?phone=+5511974858109&text=Oi! Gostaria de agendar uma sessão"
@@ -328,7 +323,10 @@
           target="_blank"
         ><i class="icon-whatsapp"></i>
           Entrar em contato</a>
-        
+        </div>
+        <div class="contato-imagem">
+          <img class="img-logo efeito-flutuante" src="./Assets/Imagens/logo_borboleta_azul.png" alt="Borboleta - logo azul" >
+        </div>
       </div>
       </section>
         </main>
@@ -352,10 +350,6 @@
       </div>
     </div>
     </footer>
-     <!-------Swiper---------->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-------Scroll---------->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
 </html>

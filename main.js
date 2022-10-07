@@ -12,35 +12,29 @@ navMenu.classList.toggle('active');});
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => { 
     botaoMenu.classList.remove('active');
     navMenu.classList.remove('active');
-}))
+}));
 
 
 
 /* depoimentos slider / carousel / swiper*/
 
-// import Swiper from "swiper"
+const containerSwiper = [...document.querySelectorAll('.swiper')];
+const nextBtn = [...document.querySelectorAll('.btn-next')];
+const prevBtn = [...document.querySelectorAll('.btn-prev')];
 
-// const swiper = new Swiper(".swiper", {
-//   slidesPerView: 1,
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 2,
-//       spaceBetween: 30
-//     }},
-//   loop: true,
-//   mousewheel: true,
-//   keyboard: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// })
+containerSwiper.forEach((item, i) => {
+  let containerDimension = item.getBoundingClientRect();
+  let containerWidth = containerDimension.width;
 
+  nextBtn[i].addEventListener('click', () => {
+    item.scrollLeft += containerWidth;
+  })
+
+  prevBtn[i].addEventListener('click', () => {
+    item.scrollLeft -= containerWidth;
+   })
+
+})
 
 /* accordion ou collapse */
 
@@ -56,15 +50,14 @@ for (i = 0; i < acc.length; i++) {
 
 /* Scrool reveal conforme scrool a página*/
 
-const scrollReveal = ScrollReveal({
-  origin: 'top',
-  distance: "60px",
-  duration: 700,
-  reset: true
-})
+// const scrollReveal = ScrollReveal({
+//   origin: 'top',
+//   distance: "60px",
+//   duration: 700,
+//   reset: true
+// })
 
-scrollReveal.reveal(
-  `#inicio .image, #inicio .text ,
-  #terapia, #terapia .terapia-destaque .text, #terapia .container-beneficios , #terapia .container-beneficios h3, #terapia .container-beneficios .card, #sobre, #sobre .container-relative, #sobre .sobre-perfil, #sobre .perfil-descricao, #depoimentos, #depoimentos h1, #depoimentos .swiper , #duvidas, #duvidas h1, #duvidas .box-pergunta, #contato, #contato h1, #contato .text, #contato .links, #contato .button, #footer, #footer .logo, #footer div p, #footer .social`,
-  { interval: 100 }
-)
+// scrollReveal.reveal(
+//   `#inicio .image, #inicio .text ,
+//   #terapia, #terapia .terapia-destaque .text, #terapia .container-beneficios , #terapia .container-beneficios h3, #terapia .container-beneficios .card, #sobre, #sobre .container-relative, #sobre .sobre-perfil, #sobre .perfil-descricao, #depoimentos, #depoimentos h1, #depoimentos .swiper , #duvidas, #duvidas h1, #duvidas .box-pergunta, #contato, #contato h1, #contato .text, #contato .links, #contato .button, #footer, #footer .logo, #footer div p, #footer .social`,
+//   { interval: 1 }

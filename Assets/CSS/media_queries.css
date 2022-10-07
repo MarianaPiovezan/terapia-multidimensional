@@ -1,9 +1,4 @@
 @media (min-width: 768px) {
-
-  .title{
-    font-size: 2.813rem;
-  }
-
   .section {
     padding: 8rem 0;
   }
@@ -30,10 +25,9 @@
   .nav-link {
     font-family: var(--body-font);
   }
-  .nav-menu a.nav-link{
+  .nav-menu a.nav-link {
     position: relative;
   }
- 
 
   .icon-menu {
     display: none;
@@ -42,23 +36,24 @@
   /*HOME*/
 
   .inicio .grid {
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: space-between;
     align-items: center;
   }
 
   .inicio .text {
-    order: 0;
+    grid-column: 1/2;
+    grid-row: 1/1;
     text-align: left;
     max-width: 24rem;
   }
 
   .inicio .image {
-    order: 1;
+    grid-column: 2/3;
+    grid-row: 1/1;
   }
 
-  .inicio p.subtitle.color-white{
+  .inicio p.subtitle.color-white {
     text-align: left;
     font-size: 1.25rem;
   }
@@ -69,59 +64,72 @@
     margin-right: auto;
   }
 
-  .terapia .terapia-detaque {
-    top: -160px;
-  }
-
-
-
-
   .terapia .terapia-detaque .text {
     max-width: 20rem;
   }
 
   .terapia .container-multi .grid {
     grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
     margin: 0 auto;
   }
 
+  .terapia .text{
+    margin: 0;
+  }
   .image-universo,
   .img-universo {
     grid-column: 2 / 3;
+    grid-row: 1/1;
+    width: 30vw;
+    right: 0;
+    border-radius: 15px;
   }
 
   .container-multi .text {
     grid-column: 1 / 2;
-    max-width: 60rem;
+    grid-row: 1/1;
+    max-width: 30rem;
   }
 
   .terapia .cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
-    row-gap: 3rem;
   }
 
-  .card {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .cards.grid {
+    gap: 0.5rem;
   }
+  .card {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover{
+    transform-style: preserve-3d;
+    transform: scale(0.85);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+}
 
   /*SOBRE*/
 
-  .sobre .container {
+  .sobre .grid {
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
   }
 
+  .sobre-perfil {
+    width: 25rem;
+  }
   .container-relative {
     grid-column: 1/2;
-    grid-row: 1/2
+    grid-row: 1/1;
   }
 
   .perfil-descricao {
+    max-width: 30rem;
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/1;
   }
 
   /*DEPOIMENTOS*/
@@ -131,19 +139,50 @@
     margin-right: auto;
   }
 
+
+
   /*DUVIDAS*/
 
   .duvidas .container-perguntas {
     margin: 0 auto;
   }
 
-  
+  button.box-pergunta {
+    width: 55rem;
+  }
 
+  div.resposta {
+    width: 53rem;
+  }
 
-/* CONTATO*/
+  /* CONTATO*/
 
-.contato .text .subtitle{
-  max-width: 26rem;
-}
+  .contato .text .subtitle {
+    max-width: 26rem;
+  }
 
+  .contato .contato-conteudo .links{
+    margin-bottom: 2rem;
+  }
+
+  .contato .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2rem;
+  }
+
+  .img-logo {
+    display: block;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .cotato .button {
+    grid-row: 3 / span 5;
+  }
+
+  .contato .links .grid{
+    flex-direction: column  ;
+  }
 }
