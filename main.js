@@ -18,25 +18,30 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 /* depoimentos slider / carousel / swiper*/
 
-const containerSwiper = [...document.querySelectorAll('.swiper')];
-const nextBtn = [...document.querySelectorAll('.btn-next')];
-const prevBtn = [...document.querySelectorAll('.btn-prev')];
 
-containerSwiper.forEach((item, i) => {
-  let containerDimension = item.getBoundingClientRect();
-  let containerWidth = containerDimension.width;
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  slidePerView: 1,
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  nextBtn[i].addEventListener('click', () => {
-    item.scrollLeft += containerWidth;
-  })
 
-  prevBtn[i].addEventListener('click', () => {
-    item.scrollLeft -= containerWidth;
-   })
+});
 
-})
+
+
 
 /* accordion ou collapse */
+
+
 
 let acc = document.getElementsByClassName("box-pergunta");
 let i;
@@ -48,16 +53,26 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
-/* Scrool reveal conforme scrool a página*/
 
-// const scrollReveal = ScrollReveal({
-//   origin: 'top',
-//   distance: "60px",
-//   duration: 700,
-//   reset: true
-// })
 
-// scrollReveal.reveal(
-//   `#inicio .image, #inicio .text ,
-//   #terapia, #terapia .terapia-destaque .text, #terapia .container-beneficios , #terapia .container-beneficios h3, #terapia .container-beneficios .card, #sobre, #sobre .container-relative, #sobre .sobre-perfil, #sobre .perfil-descricao, #depoimentos, #depoimentos h1, #depoimentos .swiper , #duvidas, #duvidas h1, #duvidas .box-pergunta, #contato, #contato h1, #contato .text, #contato .links, #contato .button, #footer, #footer .logo, #footer div p, #footer .social`,
-//   { interval: 1 }
+/* Menu ativo conforme a seçao na página*/
+
+const sections = document.querySelectorAll(`section`);
+const navLi = document.querySelectorAll('nav ul li');
+
+window.addEventListener("scroll", () => { 
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if ( scrollY >= (sectionTop - sectionHeight/4)) {
+      current = section.getAttribute('id');
+    }
+  })
+  navLi.forEach(li => {
+    li.classList.remove('active');
+    if (li.classList.contains(current)){
+      li.classList.add('active');
+    }  
+  })
+})
