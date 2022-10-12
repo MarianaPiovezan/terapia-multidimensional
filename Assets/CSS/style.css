@@ -172,7 +172,6 @@ header {
   height: 100vh;
   flex-direction: column;
   top: 0;
-  gap: 0;
   padding: 2rem 0;
   text-align: center;
   transition: 1s;
@@ -184,10 +183,9 @@ header {
 .nav-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   color: var(--body-color);
-  gap: 2rem;
 }
 
 .nav-link {
@@ -195,7 +193,7 @@ header {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 1.8rem 0;
+  padding: 1rem 0;
   font-size: 2rem;
 }
 
@@ -241,9 +239,11 @@ header {
 
 }
 
+#inicio .grid{
+  gap: 0;
+}
+
 #inicio .image {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   text-align: center;
 }
 
@@ -252,21 +252,23 @@ header {
   max-width: 500px;
 }
 
-.inicio h1 {
-  margin: 1rem 0;
+#inicio h1 {
+  margin-bottom: 1rem;
 }
 
-.inicio .text {
+#inicio .text {
   text-align: center;
+  max-width: 20rem;
+  margin: 0 auto;
 }
 
 @keyframes float {
   0%,
   100% {
-    transform: translatey(-10px);
+    transform: translatey(-5px);
   }
   50% {
-    transform: translatey(10px);
+    transform: translatey(15px);
   }
 }
 .efeito-flutuante {
@@ -424,7 +426,9 @@ h2 {
 .container-info-grid {
   display: grid;
   gap: 0.5rem;
+  margin: 0 1.5rem;
   justify-content: center;
+  
 }
 .container-info h1 {
   font-size: 1.5rem;
@@ -448,6 +452,8 @@ h2 {
   text-align: center;
   line-height: 2rem;
   color: var(--text-color-alt);
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .info p strong {
@@ -647,11 +653,11 @@ div.resposta{
   text-align: left;
   top: 0;
   z-index: 0;
+  transition: all 1s ease-in-out;
 }
 
 div.resposta p{
   text-indent: 3rem,
-
 }
 
 div.resposta.show {
@@ -758,7 +764,8 @@ button.box-pergunta.active:after {
 
 }
 
-.icon-instagram{
+.icon-instagram::before{
+  color: #FFFFFF;
   font-size: 2rem;
 }
 

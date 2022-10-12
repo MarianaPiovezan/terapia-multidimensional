@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?87nzhu');
-  src:  url('fonts/icomoon.eot?87nzhu#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?87nzhu') format('truetype'),
-    url('fonts/icomoon.woff?87nzhu') format('woff'),
-    url('fonts/icomoon.svg?87nzhu#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?a1ymf4');
+  src:  url('fonts/icomoon.eot?a1ymf4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a1ymf4') format('truetype'),
+    url('fonts/icomoon.woff?a1ymf4') format('woff'),
+    url('fonts/icomoon.svg?a1ymf4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,57 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo-borboleta:before {
-  content: "\e90d";
-
-}
-.icon-close:before {
-  content: "\e908";
-
-}
-.icon-instagram:before {
-  content: "\e909";
- 
-}
-.icon-email:before {
-  content: "\e90a";
-  
-}
 .icon-phone:before {
-  content: "\e90b";
-  
+  content: "\e908";
+  color: #5d9ab8;
 }
-.icon-whatsapp:before {
-  content: "\e90c";
-
-}
-.icon-borboleta:before {
-  content: "\e902";
-
+.icon-sol:before {
+  content: "\e900";
+  color: #5d9ab8;
 }
 .icon-chakras:before {
-  content: "\e903";
-
+  content: "\e901";
+  color: #5d9ab8;
+}
+.icon-instagram:before {
+  content: "\e902";
+  color: #FFFFFF;
 }
 .icon-mae:before {
+  content: "\e903";
+  color: #5d9ab8;
+}
+.icon-email:before {
   content: "\e904";
-
+  color: #5d9ab8;
 }
 .icon-mao:before {
   content: "\e905";
-
+  color: #5d9ab8;
 }
 .icon-meditacao:before {
   content: "\e906";
-
+  color: #5d9ab8;
 }
-.icon-sol:before {
+.icon-borboleta:before {
   content: "\e907";
-
+  color: #5d9ab8;
 }
-.icon-left-arrow:before {
-  content: "\e900";
-}
-.icon-right-arrow:before {
-  content: "\e901";
+.icon-whatsapp:before {
+  content: "\e909";
+  color: #FFFFFF;
 }

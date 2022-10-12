@@ -37,8 +37,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-
-
 /* accordion ou collapse */
 
 
@@ -52,7 +50,6 @@ for (i = 0; i < acc.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
-
 
 
 /* Menu ativo conforme a seçao na página*/

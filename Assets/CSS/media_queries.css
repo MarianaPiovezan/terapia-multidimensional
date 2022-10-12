@@ -1,10 +1,50 @@
 @media (min-width: 768px) {
+
+
+/**********TERAPIA********/
+.terapia .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+/**********SOBRE********/
+
+.sobre .container-info-grid{
+  width: 26rem;
+  margin: 0 auto;
+}
+
+.sobre .info p{
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+/*******DEPOIMENTOS******/
+
+.swiper{
+  width: 700px;
+
+}
+/********DUVIDAS******/
+
+button.box-pergunta {
+  width: 42rem;
+
+}
+
+div.resposta {
+  width: 39rem;
+}
+}
+
+@media (min-width: 1200px) {
   .section {
     padding: 8rem 0;
   }
   
   .container {
-    max-width: 1120px;
+    max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -20,6 +60,7 @@
     width: auto;
     height: 0;
     left: 0;
+    gap: 2rem;
   }
 
   .nav-link {
@@ -27,6 +68,7 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     font-size: 1rem;
+    padding: 1.8rem 0;
   }
 
 
@@ -42,14 +84,15 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: center
   }
 
   #inicio .text {
     grid-column: 1/2;
     grid-row: 1/1;
     text-align: left;
-    max-width: 24rem;
+    margin: 0;
+  
   }
 
   #inicio .image {
@@ -120,13 +163,18 @@
   }
 
   .sobre-perfil {
-    width: 25rem;
+    max-width: 25rem;
   }
+
+  
   .container-relative {
     grid-column: 1/2;
     grid-row: 1/1;
   }
 
+  .sobre .container-info-grid{
+   max-width: 20rem;
+  }
   .perfil-descricao {
     max-width: 30rem;
     grid-column: 2/3;
@@ -140,10 +188,7 @@
     margin-right: auto;
   }
 
-  .swiper{
-    width: 700px;
-    
-  }
+ 
 
   /*DUVIDAS*/
 
@@ -190,3 +235,4 @@
     flex-direction: column;
   }
 }
+
