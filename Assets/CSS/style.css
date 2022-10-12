@@ -497,7 +497,7 @@ h2 {
 }
 
 #depoimentos blockquote {
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
   width: 80vw;
@@ -562,22 +562,24 @@ h2 {
 
 
 
-.swiper-pagination-bullet-active {
-  background: var(--tittle-color);
+.swiper .swiper-pagination-bullet-active {
+  background-color: var(--tittle-color);
 }
 
 
-.btn-next, .btn-prev{
-  color: red;
+.btn-next::after,
+.btn-prev::after{
+  color: var(--base-color-alt);
   padding: 1rem;
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.5s ease-in-out;
-  font-size: 0.5rem;
+  font-size: 10px;
 
 }
 
-.btn-next:hover,
-.btn-prev:hover{
+.btn-next:hover::after,
+.btn-prev:hover::after{
   color: var(--tittle-color);
 
 }
